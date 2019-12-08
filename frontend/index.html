@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="./src/app.css" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <title>Serverless Fullstack</title>
+  </head>
+
+  <body>
+    <div id="root">
+      <div class="container">
+        <a
+          class="logo"
+          href="https://cloud.tencent.com/product/sf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASAAAAArCAYAAADYM1X3AAAABGdBTUEAALGPC/xhBQAAGNVJREFUeAHtnQmcFMX1x1/P7EkwiEYwCSJgVBAJKoqKCKIgRuMRE2NEDeIREyNq1MQzCZiYmFOJGqNGQUWjRP2LZ9QoouCVw6AieIIICEZRkGt3drb/399M907PbM/szO7scqQfn99WT9WrV9Wvq3/9qvrAsfaWC92uVme7WoONNMcOAH3NtS1odjWYz+8ZpE9YzF61K50V7d2dyH7kgcgDG48HnHbpyjFu3HrYCGu0MRDMgaQ9Lc6WS2s+1LKPJNsxe5e/Myi/w+aQPuU08DuSyAORBzZjD5SfgMa7B0MmF+GzAyAdg3zSaMmJMRQEkZFjMyGiX9ok59GWqkXlkQciD2y6HigfAY13t4Fwfo4rToZIKphytV5EXC5U1GiTrd4usT85H7TeWFQz8kDkgY3VA+UhoDPdAZDObVZpA1PEo2lWrqglRTjBFqWnCCmffgVlDfYKOifa1c4cfkUSeSDywGbkgSAdtG63xrv7QCz3gC+kpk9BK7KemYYtg2gWoLcYQlkHEXWitAd5fdDpliInTb9yyShd/330v25XOc8FzUfbkQciD2zaHmgbAZ3h9iPqeQzy6NGMfBS9JCEa16ZDMHdAOi/aJGMq5WQoZoIbs0+sO2X7QDDHUeMIbFU3s5Weki2xhI22a525m7bLo95HHog84Hug9QR0jrslxPF3VnsGZa33yKKmWo32EOkEbq3/02+sxVTRVNwmUu/gFAllqMpoR9OxlyChg+w65+MWbUUKkQciD2z0HhBVtE6SEEVlCPko7knapdbVjiqJfNSLq53nbUs7HPKaSETUCDKiRe1K2x0iuiyTGW1FHog8sCl7IHiKF78f33f3hQz0zE5105qNLDlQT6OdaX9w/lS8sTyaZ7tnYm8S9jIkmW6jnrwRtPFsnppRduSBTcYDrut2o7PLvQ53d5zN+44v+6uzWLeeJAM0sSlRMBDnOR+t1QRvtYsmktyGLwf5qEeTnGvsLHdbIp5LmtrRlCxuVbRzsbnu4eYE1pNUp8yCsz6HyaNbYfZ9BtIDragXVdnEPOCdUHvQ7UPATqA70Hn1DngbzGQsPE8aSYgHSiegs2wPIpPRkEBG0usz6YcHM7lt33LtZ6z5DCPa2j/FmSI58WeFHWbjbQhbs9veSEEL21N6fUGN8MKZZEcEFO6bzSYX8jmMnbka9A7ZqYP8PPS0DnpZdFHyPZJJSycg3a2qIApJZIxADvUQw6VEP3WB3LZvXo29s91LIbv7MLaUNhcSef2XKEgTM0Un7S16Xy3s1v+25GvQKZR8AeRKdKcu1yOb0W8IRcf/D+CYwG69y7aeVRN0k0TjYxdwANgTVINIcjxQGgGNd+XE9B0q31A6+nmSw9E+0UhXm8WtekVdy5mWrfOb7YiUK9brtKNIK0sYgN8l4zqwHp1m5VnK0Y8O9wDHZwcaPRl8yvG5opwdwPbXsXcT6OLZvZX0R7Tjr+N42ekE/R5sHUr53VkF0Y+UB0ojoGW2HXHHTqlpkNZjHM+LCZ6CDj7fU07nTnAUZSwsp8nI1mbvAUUfFwORQtkICDIZgb07QBVYCE6HWB4jzSuUL6bwhrwK/+MFxRHQDJdJ17y+tmjJcfYRQVBtQz13v1xbV+Ha6poG67J6Sbv68Wa3D9O+3WijH5Oez0F8or5P+PsG6cvQ4nwbEb09367H4H/cOOSzNS5QFCPy+RDsDblE7yjiiLZIYQJ65uWuFq8+3uyNE8x1BlqftTXW+5Ps9pxYoyVj99mzr8+2ZPIma1j+gI0YEbw/lq1f7C+R3mI7EvVTwb6s+XRh7SfzqoYoSLFRg61Hb47d5k5F53Y7PnpIEa9EUn4PTMTkVp7Z70fkUx4H6zQOl1mvHWvx+ASrqOxrjZzpDaw6u8FHkwPVYtyeqqzkNjy3xhqSf7dG9wIbtsu/AxqlbU5xB0Emv4ZwDkzFOqKzPE2nykVMdIHF6vlggo117iqtwdK0uRr6a0BrGYifKaY2dbRmcBoYDPYCqvci0CL2H7HzEWleof4JFI4AM9Cdyu9ato8Cw8EwoIXRl8F/wO/RWURalGBL3vsWGAJ0S3kA0EKqIsw7wR3YW0saKtQ/kIIjgBZbVfcdoH27n3oPkeYV6urjdFd5Cueg/yl5X+b3oUD7tg/QVEr79TfKp5CGCvV0V+po8EUwGmjN8C8gKNOw8Wgwo6Vt7OqGx/tAF+y7qR9cfG6pesFybJf0HBD6GjfjgMbQILAdeAX8CzxJ36aTFhRsTEBB9f6M/nOFlNGV/zVuF6P700K6KkN/RxL5R/3TWNfZqYV5jYcrgcaVQgfJgOYENHdulX0c+x3kc6bFKE5APKVIdY3IaqUl3QttaN8/lVI1pXuLeypd/i3owr210kTDQ0SVtGus1s6zbzqlWiiqPZxcEgGhrxPpVtDTa0AnsxwrUpIsBcdzgJ/SjzDBxh/J/x7Q4vd54AFwEAiTD8g8GnuzwwqDed6AmUzefsH8nO2x2FL/s4S6ncj4HZA/fBFZ6KTyx9af2T6b+trnZoIN6aqOpDsYDO4BmuqEifr6Xew1O7bYuoiyX4RVCuSdT131uWjB7ikoaz8k+1N/Vnqz7X9z9x/bOnahgq58MxXoJM8n91LwHex8lE8BOy9Rthv4Nnq35dNTPrrHk6jNl9EdqLx8gq7GgXyrcREmmrpeALSILxmgK19Gpol87GarqTnTGolmcsnHYUxVVDI0qgHjo4IzXnlBqVuvX12sMn6dzZ73O5PNYkRPSE51fwbx3AiJNCcfNSMupfkUtJ3TdOqBRXFrNU9jr2U/prnFtU2V9hIOysnYfhLoinMD6Au2AF1BfzANfAE8ge5XSFsSHVyRz4HgdjAEyN5O4FSgAayT+gHs1ZLmFcpHU6jIQuTzDjgdKAKqAduD48D94E6QJdRVP14EGnTvAkUeXRmk2yoFY4BOAvXpcfSzxxqZIXI4efeAZUD1+gDt2ygwFUjGgXNTW83/yC9jwa+9olXeb+X5eMQrKyU5xFN2SXU173DBfyKC2WBHMBeIFDV+OoP9wSVAj43oOLyCfi/SDhHacsA0GtPFUeNC4/JI8Hmgsa1xJALXuPDJh83cU/iZuVdZbaezbf26VGHTnzhnu4inro4C9y3yuWI5DCj3i2zvaNU1MauvE102VUkRk4gqkYCRG06zIf1XZApztrTes4jwrAriSFAWMJMiGZomGoIR7U2wJKXhcrV07EvUqW0iHgqahKb5FvUkpmPnNOWVaQNn66STswtOwdCTf14DnwXHcHJqEbOZoHcZmT8GC0F/9NaSZgk6fyTje0AUq5P5RPT8k5KfaUFvEFszgUL1U9C5OV2S/Rc9RV8ayOqjTvqT0dUJW5RQ/7congeeB6Ooq8GfJej0IOMFoEF4BjryWZagI7JkPKVE+/YKGJprDz1dbjSwNZgXgh3QkX4zQXckmY+D5eiIENsk2NM+DAZvYk9EXzbJ2f/QVzE8nfk0qhP4TnAq/ViT2wn0+pH3f2Bn8DA6h+Xq6Dd6L5GULQLC3mnYuwFoDKhvd5E2E/QOIlNlW3uFgQho1ryjrbLqLEtHMJnKIhGXAVK3/meM/b0ssXywDd1llA3td5CtSQxifWgYJHMLhJNIkZRfU2QkW1VVR5sbn26z5vb0i7LSh3m2aBFPG4t86ikJkg+8hyT4N4XoZyhLgIMglJFgFHqDwV7UoV/0rzKlm/kjWxV2lt3q6oqwoeRqGhb5XMdBCSUfr2MTSTUoeoEfgEIi8rkCe83IR5XI/xfJfdpGxqST0L+/IVfkowvKGOqVQj57UEfErgGnqWMz8iFffVlMMl7byC8ZgCLFQvJfCo8Is0eeRsZPvMq9SId42x2R6EoueTmddPjf39OiyEckpAtPM/JRj8ifR3IsEDEfir+/QdquQhvyjcaS5CL6EEo+KqTsCZK9tO2LBrPZP9/uQjRxOeDD8QEGEPkkEzNYVB4O6fzEhvafyx0uWMWT0QPX2LBdZ9uQnU+ChL7KtO1tq6ZOUBRNVVUNtXjFIzb71azG7XrC+I8Iyap4aEyEERRNnhptIfgqM9VxdgLv0xweiAzGOevtJL4NNNb5CXWHEwXNyCKh9G7onfrLmYrpat+hwoHR1OEor1H/AIX2gQOj6E4RjmR4Osn79ylKLs5bmi54yCsPJX36VkP5OE/nXNrP9b5XlDdRFKLLw73UfSevFgWU30uyBOgYDASF5Dj0F+VToExk+YZXHrpv+eq2Md8f8xtiHGmKNcbr/4/wQUOhfaF8DuVTPJ3vFNItU9lp2JFf/gP8MVzI9MJgYZqA1tUfy7pO36w1H5FPQ/1MW736aywmvx6sFLo9fMBjRCqjsDGTNaRslQTjOxbfxdxYZgBe63ZmtngLUcrxoeSjb/+43Mk4qfCDXqmGTuGJ5XX2NUhoZhYJ6VBVs+ayNnVVyO5T+//6Mk1o2qATNMlJ37MQ0HkPSHZLJ3n/zmOQBa4SoXoLvNxtQ0vTd6oqKEuAv+XRKZTt9/EfhfbJL8PQq54xv14+23PzFQTyW9q3gGrZNpd5lgaUzWLxhnZFVeNIF4lHiqw23dPLnG9FVmyFmqJhyQOMy8b0ZvF/YzZjRgUPMZ9obqBujItbQ8N/LcHcbtSeK4s2N7zvAquqPJK1ortTJKQFatmKwdoN9WcQRf05ZWuq+1kmJrdDFt8IJZ+EPUPkcjjRjX+1a7kLpzvceeN2YQPviqVpNV1Hp6rDN6UnsM7UseIf/D40+24R8IlgG07clqYqLe3JJ57CFtjKCUlTJT4RvMGgEQmVKv6+aYpZzL6N9hroXWpDIfr+vm0TUtZeWf447I4/tWbVkeL7WseqYPQT6JRP5N3ob/dAfnts7u4ZVeRVsnBSduvFwsseEE6mciULKvXrr7fhu7yZySxya88dVnLn63j7/PolkNDZRERJng36XhP5TOZLii7PZlTy+YK6HJs6VRJ84tUl5Byb/zZiTq3Mz3HOmzbFvZ6o59ImYtNuudzZ6WG92Horo9zuWwqdJVrXKGXtQJS5VhXbIEHPiniDv2W2q2fbP5m9ny0nDGgHLZ8gX2A7dP0njyUtMLdV/H3pyAvKg3T6FK/jg0iLjUTauq+qv6VnZFUJxoJBg+ovz1M3eKnOo5I/2xsL/oVgTX7N/CUVnePunqsrqjo1EZCiljpWjxOp1er8NQuVfLO/wsVzWHj+gPDjgybyuYXH2WOQTwVTNX8Y+Xa05lPHgdV/ZjjOKfnE8M1g/y7I53yinhqIJ72oHbdOnRtsT86UjiSgeV6flnLlGtnUv41jwyfEfqV2h31h3LnzqafQW4vh95VqYxPUf5w+66TuAn7B/j9eQjTS1t31SbtvCYb847qeOmFj3ico3SBptXhjQf0bDDQ99aP4om3Gtq+tGpGeYnp1dMvdXNYtasM6XrThlOLQ/r9oIp+b+X/DzP6aIh/RU1DSkc8DvFRxXJvIRzaTONxl3SWH27ffMvUUcbDV9t72CWhXBqwfDbV3m8Xan+MpbkXfehZbKaDn79s+gbzNdpMTTVf3X3o7uBvphR24s/7FQsdqhyLbFSFI5tJ33eDIFX9Ny49ecsuDvxUaFJKXvMIhhZTylcU6x+O9Uw8d+hp6rcLcFTait9izPHIj89AKnjWpggTCyKeOZxdqiHy0jtNW0d0xx1ZkERDLW53j1rutpkusr8XSd4EY3b8VXdAEA0xU3O7CoHyfRnwSmdiKBmd4dcbRZ4X4BaWj9ivQCX8KqzuR5ZJJGHrdM/Zj9qlVJ1ypneFYLQ602+Kxol+62J3vtaPb3mHiE9ABYYV+Hra6s+236fj5Oelj3u8ji/TJF4P1Y1QKrD57RW4sX2PBusVt38ZzAtUQjL5qGEY+9URFW9kJvDZRylpCS2036z+zseb72ZKVNpR7V54feiYuxc8Fr16UH4HuW6Sj2tBsKVVPR1mT1LG0ObqUiuhOAQq9u4ErQF7BNguKNpN0CtBTsh0hC71GOtHm58rRIMdTF+TDwIdAUcHT2L4StBjdolMLNH1rrXzfqzgGO1/NZ4QyRQ+/BduCJeDnIEz8C8gQ6vQJUyBfF0NNr7cLK/fz8Ises3gY6Jy7nnp5oyrKatC5DTRJbFWy8fXUnSo/Sy+eOjDfjLktOtavkje92VXnp0M++zYjHx3Ceu6Efcgj8sHne/IaK7JAt/f1TlGQbjgsq+qbrl5FGmq7Ggfnr1h5GujEe4EDcGiYVfK/Sf6tQFecT8N0yp1H357B5rVAA+dh+nA50KBrEn7rLtrZIOvkoa7C+nM8xdMpv0u6TRW9DfI0GO8Be4OuYB3oCHmfRhQ5SH6QTmBbTlAgQmyVsN9vU/EA8BxQZCsfvIbNs8BwsDW/U8K22uoNJpCxCNySKmjFH9p9gmpTgY7VdGwqAss9Vp+n7BFwOpDo/bt8Y+lByt8D2oe/YSsrKuH3TuRPBzpufoTDZl75LiVqa1cwh/ojczXJ25c8+e2AYFlswerEE1m34PVGu+P0YsrUP6hY8vZktxfEcz929LRytqTJZzLTrpPt3DJ/5bAzn8GMWa/UixuBVhesNB3EDSFH0ejdQIPzQQ6EBuxk8Cugg89CfWrBv4JUL30+T9pRch4NXQ5E1xcDvYn+b3A7eJrfS8FV4EqQJfTzSTK+Bj4CItD3qPMYuAJMBnPIU/3DgXS1b4q42l28diZ4DV1MX/Ru1Ex+fwy+4+W3KsH2XCruB3Siy952YBJ4CnxIO8vAPLbXgnfAT4GisGHk70LaWlG/rwExcBlYhb3nwZ1AU0P5+mCwEpxAP0X8oUIZJ7n9CCTAjkDHTsRxB/gHv7WPsqV9vBVI8h477InMhoJXgIhQ7/59BB4B08Br5D0LtDh+CmiSWF0VTzAmkysttfZDvp6Erqrm2SBnbJNWqRuTeSU/bg+C3bLIR/xdBRK8R9WTgdA+b6uPhfR0MqdFhytpK+vc1JOafm6HpRycj8ExNHgq0MDcCZwENABGA92JuAvsjt5fSDtMaK8eXEqDg8FTQANydzAG7A8UTYoQ1b9mQt37yPwy0GDXoB4FLgAnAeXrBBwPRqL7CWmHCe3dRGNngNVAV+ZhYAvQE7RJsO2CGzDSF4h8gjdsunv51aQSlZ0LelJHJ2KrhLrrgHz5FfAS0MjeGxwLNKZWgfvBQPRuJy0o6NyJgiKVRUBnpo7XcUDHX/b1pvyNpEUJulos3xNcAURIW4FDgMb+zuA/QGNqMmgSxyZMiNmoYx62qprR3H5PF4iMHFtjycaR3MV6vkm7mI2bYflKuxfy2Tk1nP062kXRQgNfjz6RsLgVT036pvKmt7p7028iOp5T8fm6Eu2EPWoL+L7MhNKf1MzbVisLuBrUUlUHuzdYCvSZgw49OWkzVOibBrWuiAOAru6v07fFpEUJ9XVyawDL+29TV1fSDSr0SaPuS6Ab0MN8y9qjQ96+9/LaURNvgrdob41+lFtorwabGkfyuU5+vSjrj3p+Fi/YEmnu5tWYjR2RdpsEm/L3IKCL2ovYXBVmULRgpo+PVVXdafWBuZIeRkwm51mi7jAbPnBBWOVmeTe5A4lwRD59Qsmnnm+FLOTK3x5EcKPbm8Xuh2i7HySXkTQBfYsJQOhVPKMYbUUeiDzQ0R7QFQ+Oqp0O0bzI1CvTvr4FVFHZzyqrH7ZZr47IFOTZ0lcMq1m4CiMftZLgQ1EnOee3C/ncwsfCq1mJrwglnxdZ4Ziep9dRduSByAMb0APpCEgdeHbecHPij7IgXZ36BKvfqXQkRGjk3s93oYki4i9Z47oV9tlu9XyOo9G2eaXRnh21h8UqpkE+PZpFPjHWBpL2K77aMzFlcllqvulbLz7dgnqfAeuZ++p/R00wx3QI92OpOfARpFVZkU+aWuuYDIxmNjuz+IYizcgDkQc6ygMZAlKLz7x6gdXUXpGaigU/y6HXM/QFxGQjazgJzQ9XsEi0zmLcMlvbqc6W9urFC6ddU8uQwZ7LugtVuKyO6z90Ti92BTVK2Y5hQ7QiO3rNYmu2OqdyNOUKzn7VrqZe9TyxOtb5FVuRRB6IPLARekCnakb0ouFz83/Nh8nOT32aQ88E5UpqgZpqcc741ZVJe79n3JKs8wUJILdOW6lH9oL2te0jty2fohI8kPVt1ptauTCXazb6HXkg8kD5PZBNQL79Wa/90OLxiXzzubZZNCQd/iceW1+7zhZvX2GN8Uoik41DFPUkeditkWcvxjq/2Tg6FfUi8kDkgXweyE8dT7+6H//VzkSeCzooNf1KMM/Rh+r1DNPaTutsac8NTz7qvR/xpO98PQEB/ZTF7tn5djjKjzwQeWDj8UB+AlIfp01jWXnASL4//y2mPEMJL3rams9U2PKeWo/ZMOK3q9lhI6s8TupBqtn07y+sDP2dhxthyEgiD0Qe2BQ84J/OLfd11nzuQyV3sPd26GFrq/uwANyVk16LwHrQqyMkCeEkIZy1NLaCdCF9eI+7Ym/zfz982hEdiNqIPBB5oLwe+H8llAa/7oPNfAAAAABJRU5ErkJggg=="
+            alt="Tencent Cloud Logo"
+        /></a>
+
+        <section class="title">
+          <div class="left title-left">
+            <h1>Next generation, serverless cloud</h1>
+            <h3>
+              Tencent Cloud and Serverless have joined forces to create a
+              serverless cloud focused on delivering outcomes, not
+              infrastructure. Everything autoscaling; never pay for idle.
+            </h3>
+          </div>
+          <div class="right title-right">
+            <img
+              class="title-gif"
+              src="./src/images/tencent-cloud-hero.gif"
+              alt="Serverless Framework CLI - Tencent Cloud"
+            />
+          </div>
+        </section>
+
+        <div class="hero">
+          <img src="./src/images/hero.png" />
+        </div>
+        <div class="tagline">
+          a fullstack app built on serverless components via the serverless
+          framework
+        </div>
+
+        <div class="user-wrapper">
+          <div class="left">
+            <h3>User Form</h3>
+            <!-- user form -->
+            <section class="user-form" action="#">
+              <div class="form-item">
+                <label for="name">
+                  Name:
+                </label>
+                <input name="name" v-model="form.name" type="text" /><br />
+              </div>
+
+              <div class="form-item">
+                <label for="email">
+                  Email:
+                </label>
+                <input name="email" v-model="form.email" type="email" /><br />
+              </div>
+
+              <div class="form-item">
+                <label for="site">
+                  Site:
+                </label>
+                <input name="site" v-model="form.site" type="text" /><br />
+              </div>
+
+              <button class="submit-btn" @click="addUser">Submit</button>
+            </section>
+          </div>
+          <div class="right">
+            <h3>User List</h3>
+            <!-- user list -->
+            <section class="user-list">
+              <ul v-if="userList.length > 0">
+                <li v-for="item in userList" :key="item.id">
+                  <p>
+                    <b>Name: {{ item.name }}</b>&nbsp;&nbsp;
+                    <b>Email: {{ item.email }}</b>&nbsp;&nbsp;
+                    <b>Site: {{ item.site }}</b>
+                    <button @click="deleteUser(item.name)">x</button>
+                  </p>
+                </li>
+              </ul>
+              <span v-else>{{ loading ? 'Loading' : 'No Data'}}</span>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
