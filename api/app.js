@@ -3,38 +3,12 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const { Pool } = require('pg');
 const bodyParser = require('body-parser');
 const UserController = require('./src/controller');
 
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
-
-const DB_NAME = 'serverless';
-
-// init mysql connection
-function initPgPool() {
-  const pool = new Pool({
-    connectionString: `${process.env.PG_CONNECT_STRING}/${DB_NAME}`,
-  });
-  // init database
-  pool.query(`CREATE DATABASE IF NOT EXISTS ${DB_NAME}`).then(() => {
-    // init table
-    pool.query(`CREATE TABLE IF NOT EXISTS users (
-      ID serial NOT NULL,
-      NAME           TEXT         NOT NULL,
-      EMAIL          CHAR(50)     NOT NULL,
-      SITE          CHAR(50)     NOT NULL
-    );`);
-  });
-
-  return pool;
-}
-// actually you can make a pool function deal with pg connecting
-if (!app.pgPool) {
-  app.pgPool = initPgPool();
-}
 
 // get user list
 app.get('/users', async (req, res) => {
