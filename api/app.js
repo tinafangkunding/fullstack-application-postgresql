@@ -12,7 +12,7 @@ app.use(cors());
 
 // get user list
 app.get('/users', async (req, res) => {
-  const data = await UserController.getUserList(app.pgPool);
+  const data = await UserController.getUserList();
   res.send(
     JSON.stringify({
       code: 0,
@@ -26,7 +26,7 @@ app.post('/users', async (req, res) => {
   let result = '';
   const user = req.body;
   try {
-    const data = await UserController.createUser(app.pgPool, user);
+    const data = await UserController.createUser(user);
     result = {
       code: 0,
       data,
@@ -47,7 +47,7 @@ app.delete('/users/:name', async (req, res) => {
   let result = '';
   try {
     const { name } = req.params;
-    const data = await UserController.deleteUserByName(app.pgPool, name);
+    const data = await UserController.deleteUserByName(name);
     result = {
       code: 0,
       data,
