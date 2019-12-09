@@ -31,7 +31,7 @@ $ npm i serverless -g
 Severless cli is very convenient, it can download templates in any github project which should contain `serverless.yml` file.
 
 ```console
-$ serverless create --template-url https://github.com/yugasun/tencent-serverless-demo/tree/master/fullstack-application-vue
+$ serverless create --template-url https://github.com/yugasun/fullstack-application-postgres
 ```
 
 ### Bootstrap
