@@ -11,18 +11,23 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
+const DB_NAME = 'serverless';
+
 // init mysql connection
 function initPgPool() {
   const pool = new Pool({
-    connectionString: process.env.PG_CONNECT_STRING,
+    connectionString: `${process.env.PG_CONNECT_STRING}/${DB_NAME}`,
   });
-  // init table
-  pool.query(`CREATE TABLE IF NOT EXISTS users (
-    ID serial NOT NULL,
-    NAME           TEXT         NOT NULL,
-    EMAIL          CHAR(50)     NOT NULL,
-    SITE          CHAR(50)     NOT NULL
-  );`);
+  // init database
+  pool.query(`CREATE DATABASE IF NOT EXISTS ${DB_NAME}`).then(() => {
+    // init table
+    pool.query(`CREATE TABLE IF NOT EXISTS users (
+      ID serial NOT NULL,
+      NAME           TEXT         NOT NULL,
+      EMAIL          CHAR(50)     NOT NULL,
+      SITE          CHAR(50)     NOT NULL
+    );`);
+  });
 
   return pool;
 }
@@ -52,12 +57,12 @@ app.post('/users', async (req, res) => {
       code: 0,
       data,
       message: 'Insert Success',
-    };    
+    };
   } catch (e) {
     result = {
       code: e.code,
       message: `Insert Fail: ${e.message}`,
-    };    
+    };
   }
 
   res.send(JSON.stringify(result));
