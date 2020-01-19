@@ -15,16 +15,13 @@ function initPgPool() {
   const pool = new Pool({
     connectionString: `${process.env.PG_CONNECT_STRING}/${DB_NAME}`,
   });
-  // init database
-  pool.query(`CREATE DATABASE IF NOT EXISTS ${DB_NAME}`).then(() => {
-    // init table
-    pool.query(`CREATE TABLE IF NOT EXISTS users (
-      ID serial NOT NULL,
-      NAME           TEXT         NOT NULL,
-      EMAIL          CHAR(50)     NOT NULL,
-      SITE          CHAR(50)     NOT NULL
-    );`);
-  });
+  // init table
+  pool.query(`CREATE TABLE IF NOT EXISTS users (
+    ID serial NOT NULL,
+    NAME           TEXT         NOT NULL,
+    EMAIL          CHAR(50)     NOT NULL,
+    SITE          CHAR(50)     NOT NULL
+  );`);
 
   return pool;
 }
