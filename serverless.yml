@@ -24,12 +24,11 @@ api:
     region: ap-beijing
     code: ./api
     functionName: fullstack-api-pg
-    role: ServerlessRole
     functionConf:
       timeout: 30
       vpcConfig:
-        vpcId: vpc-hdlaegxa
-        subnetId: subnet-ht9ut9rt
+        vpcId: vpc-lfxuu8zy
+        subnetId: subnet-hx9jejub
       environment:
         variables:
           PG_CONNECT_STRING: ${postgresql.connects.private}
@@ -46,5 +45,5 @@ postgresql:
     dBInstanceName: serverless
     extranetAccess: false
     vpcConfig:
-      vpcId: vpc-hdlaegxa
-      subnetId: subnet-ht9ut9rt
+      vpcId: vpc-lfxuu8zy
+      subnetId: subnet-hx9jejub
