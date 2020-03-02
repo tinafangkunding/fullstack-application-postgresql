@@ -13,8 +13,6 @@
     "@serverless/eslint-config": "^1.2.1",
     "eslint": "^6.6.0",
     "eslint-plugin-import": "^2.18.2",
-    "lerna": "^3.18.3",
-    "ora": "^4.0.3",
     "prettier": "^1.18.2"
   },
   "eslintConfig": {

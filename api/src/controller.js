@@ -6,14 +6,12 @@ function ApiError(code, msg) {
   const e = new Error(msg);
   e.code = code;
   return e;
-};
-
-const DB_NAME = 'serverless';
+}
 
 // init mysql connection
 function initPgPool() {
   const pool = new Pool({
-    connectionString: `${process.env.PG_CONNECT_STRING}/${DB_NAME}`,
+    connectionString: process.env.PG_CONNECT_STRING,
   });
   // init table
   pool.query(`CREATE TABLE IF NOT EXISTS users (
@@ -26,13 +24,13 @@ function initPgPool() {
   return pool;
 }
 
-const pool = initPgPool()
+const pool = initPgPool();
 
 module.exports = {
   async getUserList() {
     const client = await pool.connect();
     const { rows } = await client.query({
-      text: 'select * from users'
+      text: 'select * from users',
     });
     await client.end();
     return rows;
@@ -60,7 +58,7 @@ module.exports = {
         values: [name],
       });
       await client.end();
-      if (rows.name) {
+      if (rows.length > 0) {
         return rows;
       }
       return false;
